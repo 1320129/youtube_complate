@@ -1,0 +1,16 @@
+.item {padding:10px;cursor:pointer;width:50%;display: flex;height:200px;overflow: hidden;position:relative;border:1px solid #ccc;box-sizing: border-box;transition:transform 0.3s ease;}
+.item:hover {transform: scale(1.05);}
+.item_img {width:34%}
+.text_wrap {padding:15px;}
+.item_dec{
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+}
+@media screen and (max-width: 800px)  {
+    .item {flex-wrap:wrap;}
+    .item_img {width:100%}
+}
