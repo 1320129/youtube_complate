@@ -1,1 +1,2 @@
-.list_wrap {display:flex;flex-wrap:wrap;padding:0;overflow: hidden;}
+.list{display:flex;flex-wrap:wrap;padding:0;overflow: hidden;}
+.view {display:flex;flex-wrap:wrap;padding:0;overflow: hidden;}

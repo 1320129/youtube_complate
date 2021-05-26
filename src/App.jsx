@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
+import styles from './App.module.css';
 import Video_list from './component/video_list/video_list';
-import SearchHeader from './component/search_header/search_header'
+import SearchHeader from './component/search_header/search_header';
+import Video_view from './component/video_view/video_view';
 
 function App({youtube}) {
   const [videos,setVideos] = useState([]);
+  const [selectvideo,selectedvideos] = useState(null);
+
+  const clickhandle = (video) => {
+    selectedvideos(video);
+  }
 
   const search = query => {
     youtube.search(query)//
@@ -18,7 +24,16 @@ function App({youtube}) {
   return (
     <>
       <SearchHeader onsearch={search}/>
-      <Video_list videos={videos} />
+      <section className={styles.container}>
+        {selectvideo &&
+        <div>
+        <Video_view video={selectvideo}/>
+        </div>
+        }
+        <div>
+        <Video_list videos={videos} onclickvideo={clickhandle} display={selectvideo? 'view':'list'}/>
+        </div>
+      </section>
     </>
   )
 }
