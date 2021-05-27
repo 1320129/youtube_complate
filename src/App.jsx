@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import styles from './App.module.css';
 import Video_list from './component/video_list/video_list';
 import SearchHeader from './component/search_header/search_header';
@@ -20,10 +20,10 @@ function App({youtube}) {
   useEffect(() => {
     youtube.mostpopula()//
     .then(videos => setVideos(videos));
-  }, []);
+  }, [youtube]);
   return (
     <>
-      <SearchHeader onsearch={search}/>
+      <SearchHeader onsearch={search} mode={clickhandle}/>
       <section className={styles.container}>
         {selectvideo &&
         <div className={styles.view}>

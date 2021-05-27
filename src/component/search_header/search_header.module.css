@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   margin-right: 1em;
+  cursor:pointer;
 }
 
 .input {
@@ -26,4 +27,12 @@
 .buttonImg {
   height: 100%;
   padding: 0.5em 0.2em;
+}
+
+@media screen and (max-width: 800px)  {
+  .input {font-size:3vw;}
+  .buttonImg {height:63%;}
+  .header {height:11vw;}
+  .img {width: 7vw;}
+  .title {    font-size: 4vw;}
 }

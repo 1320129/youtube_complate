@@ -12,6 +12,12 @@
     display: -webkit-box;
 }
 @media screen and (max-width: 800px)  {
-    .item {flex-wrap:wrap;}
-    .item_img {width:100%}
+    .item {flex-wrap:nowrap;width:100%;}
+    .item_img {
+        position: relative;
+    top: 50%;
+    height: 60%;
+    width: 25%;
+    transform: translateY(-50%);
+    }
 }
