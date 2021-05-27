@@ -21,7 +21,7 @@ const SearchHeader = memo(
     return (
       <header className={styles.header}>
         <div className={styles.logo} onClick={()=>{mode(null)}}>
-          <img className={styles.img} src="/images/logo.png" alt="logo" />
+          <img className={styles.img} src="./images/logo.png" alt="logo" />
           <h1 className={styles.title}>Rantube</h1>
         </div>
         <input
@@ -34,7 +34,7 @@ const SearchHeader = memo(
         <button className={styles.button} type="submit" onClick={onclick}>
           <img
             className={styles.buttonImg}
-            src="/images/search.png"
+            src="./images/search.png"
             alt="search"
           />
         </button>
