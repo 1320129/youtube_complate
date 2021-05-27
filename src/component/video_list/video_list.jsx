@@ -7,7 +7,7 @@ const Video_list = ({videos,onclickvideo,display}) => {
   return(
     <ul className={modecss} key="list">
     {videos.map(video => (
-      <Video_item  key={video.id} video={video} onclickvideo={onclickvideo}/>
+      <Video_item  key={video.id} video={video} onclickvideo={onclickvideo} mode={display}/>
     ))}
   </ul>
 )};

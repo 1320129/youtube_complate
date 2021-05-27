@@ -5,3 +5,12 @@
 .container{
   display: flex;
 }
+
+.view{
+  flex:70%;
+
+}
+
+.list{
+  flex:30%;
+}

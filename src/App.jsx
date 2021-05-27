@@ -26,11 +26,11 @@ function App({youtube}) {
       <SearchHeader onsearch={search}/>
       <section className={styles.container}>
         {selectvideo &&
-        <div>
-        <Video_view video={selectvideo}/>
+        <div className={styles.view}>
+        <Video_view video={selectvideo} list={clickhandle}/>
         </div>
         }
-        <div>
+        <div className={styles.list}>
         <Video_list videos={videos} onclickvideo={clickhandle} display={selectvideo? 'view':'list'}/>
         </div>
       </section>
