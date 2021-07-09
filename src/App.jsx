@@ -10,6 +10,7 @@ function App({youtube}) {
 
   const clickhandle = (video) => {
     selectedvideos(video);
+    window.scrollTo(0,0);
   }
 
   const search = query => {
