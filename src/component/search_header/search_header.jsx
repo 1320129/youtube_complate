@@ -22,13 +22,13 @@ const SearchHeader = memo(
       <header className={styles.header}>
         <div className={styles.logo} onClick={()=>{mode(null)}}>
           <img className={styles.img} src="./images/logo.png" alt="logo" />
-          <h1 className={styles.title}>Rantube</h1>
+          <h1 className={styles.title}>Hyucktube</h1>
         </div>
         <input
           ref={inputref}
           className={styles.input}
           type="search"
-          placeholder="란이 검색"
+          placeholder="검색"
           onKeyPress={onkeypress}
         />
         <button className={styles.button} type="submit" onClick={onclick}>

@@ -14,7 +14,7 @@
 }
 
 .list{
-  flex:30%;
+  flex:30%;background: #F9F9F9;padding:0 5%;
 }
 
 @media screen and (max-width: 800px)  {
@@ -31,5 +31,6 @@
   .list{
     flex:100%;
     width:100%;
+    padding:0 5%;
   }
 }
